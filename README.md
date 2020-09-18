@@ -26,8 +26,15 @@ The `path/to/gold.json` and `path/to/predictions.json` should be replaced with t
 
 `python scorere.py -g path/to/gold.json -p path/to/predictions.json -v`
 
-# Submission
+# Participation
 
-Submit the predictions of the model for the samples of the test set, which will be provided later, to [EasyChair](https://urldefense.com/v3/__https://easychair.org/conferences/?conf=sduaaai21__;!!C5qS4YX3!Sgxkhh2juEB5WzmclunaUhWV76hQBFnIc9fVz_658mfwcw6DvfoXu6GqUHOE3AQKYA$). Please note that the submitted prediction file should have the same format as the `datasset/predictions.json` file and use the IDs of the test samples. 
+In order to participate, please first fill out this form to register for the shared tasks: https://forms.gle/NvnT549mSbyeJQAPA. The team ID that is provided in this form will be used in the subsequent submissions and communications. The shared task is organized in two separate phases:
+- *Developtment Phase*: In this phase, the participants will use the training/development sets provided in this repository to design and develop their models. 
+- *Evaluation Phase*: Two weeks before the system runs due, i.e., 9th November 2020, the test set is released here. The test set has the same distribution and format as the development set. Run your model on the provided test set and save the prediction results in a Json file with the same format as the "predictions.json" file. Name the prediction file as "**output.json**" and send that to the email address sdu-aaai21@googlegroups.com with title "Results of AI-[TEAM-ID]-[RUN-ID]", where "[TEAM-ID]" should be replaced with ID of your team provided in the registration form and "[RUN-ID]" with a number between 1 to 10 to identify the model run. Each participant team is allowed to submit up to 10 different model runs. Note that you official score is reported for the model run with ID 1. In addition to the "output.json" file, please include the following information in your email:
+    - Model Description: A brief summary of the model architecture. If your model is using word embedding, please specify what type of word embedding your model is using.
+    - Extra Data: Whether or not the model employs other resources/data, e.g., acronym glossaries, in the development or evaluation phases.
+    - Training/Evaluation Time: How long the model takes to be trained/evaluated on the provided dataset
+    - Run Description: A brief description on what is the difference in the recent model run compared to other runs (if it is applicable)
+    - Plan for System Report: If you have any plan to submit your system report or release your model publicly, please specify that.
 
 For more information see [SDU@AAAI-21](https://sites.google.com/view/sdu-aaai21/home)
