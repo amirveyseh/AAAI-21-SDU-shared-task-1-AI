@@ -16,11 +16,11 @@ The dataset folder contains three files:
   - predictions: The labels of the words of the sample in BIO format. The labels `B-short` and `B-long` identifies the begining of a short-form and long-form phrase, respectively. The labels `I-short` and `I-long` indicates the words inside the short-form or long-form phrases. Finally, the label `O` shows the word is not part of any short-form or long-form phrase.
 
 # Code
-In order to familiarize the participants with this task, we provide a rule-based model in the `code` directory. This baselines implements the method proposed by [Schwartz and Hearst](http://psb.stanford.edu/psb-online/proceedings/psb03/schwartz.pdf) [1]. This model recognizes the acronyms (i.e., short-forms) if more than 60% of their characters are uppercased. It compares the characters of the acronym with the characters of the words before or after the acronym. If the characters of the words form the acronym, they are labeled as long-form. To run this model, use the following command:
+In order to familiarize the participants with this task, we provide a rule-based model in the `code` directory. This baselines implements the method proposed by [Schwartz and Hearst](http://psb.stanford.edu/psb-online/proceedings/psb03/schwartz.pdf) [1]. To identify acronyms, if more than 60% of the characters of a word are uppercased, this model recognizes it as acronym (i.e., short-form). To identify the long-form, it compares the characters of the acronym with the characters of the words that are before or after the acronym up to a certain window size. If the characters of these words could form the acronym, they are labeled as long-form. To run this model, use the following command:
 
 `python code/character_match.py -input <path/to/input.json> -output <path/to/output.json>`
 
-Please replace the `<path/to/input.json>` and `<path/to/output.json>` with the real paths to the input file (e..g, `dataset/dev.json`) and output file. The output file contains the predictions and could be evaluated by the scorer using the command described in the next section. The official scores for this baseline are: *Precision: 93.22%, Recall: 78.90%, F1: 85.46%*
+Please replace the `<path/to/input.json>` and `<path/to/output.json>` with the real paths to the input file (e..g, `dataset/dev.json`) and output file. The output file contains the predictions and can be evaluated by the scorer using the command described in the next section. The official scores for this baseline are: *Precision: 93.22%, Recall: 78.90%, F1: 85.46%*
   
 # Evaluation
 
