@@ -76,7 +76,7 @@ if __name__ == "__main__":
     parser.add_argument('-g', type=str,
                         help='Gold file path')
     parser.add_argument('-p', type=str,
-                        help='Predictions file path')
+                        help='Prediction file path')
     parser.add_argument('-v', dest='v',
                         default=False, action='store_true',
                         help="Verbose Evaluation")
