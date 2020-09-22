@@ -20,7 +20,7 @@ In order to familiarize the participants with this task, we provide a rule-based
 
 `python code/character_match.py -input <path/to/input.json> -output <path/to/output.json>`
 
-Please replace the `<path/to/input.json>` and `<path/to/output.json>` with the real paths to the input file (e..g, `dataset/dev.json`) and output file. The output file contains the predictions and could be evaluated by the scorer using the command described in the next section. The official scores for this baseline are: "Precision: 93.22%, Recall: 78.90%, F1: 85.46%"
+Please replace the `<path/to/input.json>` and `<path/to/output.json>` with the real paths to the input file (e..g, `dataset/dev.json`) and output file. The output file contains the predictions and could be evaluated by the scorer using the command described in the next section. The official scores for this baseline are: *Precision: 93.22%, Recall: 78.90%, F1: 85.46%*
   
 # Evaluation
 
