@@ -14,7 +14,13 @@ The dataset folder contains three files:
 - **predictions.json**: A sample prediction file created from `dev.json` to test the scoring script. The participants should submit the final test predictions of their model in the same format as the `predictions.json` file. Each prediction should have two attributes:
   - id: The ID of the sample (i.e., the same IDs used in the train/dev/test samples provided in `train.json`, `dev.json` and `test.json`) 
   - predictions: The labels of the words of the sample in BIO format. The labels `B-short` and `B-long` identifies the begining of a short-form and long-form phrase, respectively. The labels `I-short` and `I-long` indicates the words inside the short-form or long-form phrases. Finally, the label `O` shows the word is not part of any short-form or long-form phrase.
-  
+
+# Code
+In order to familiarize the participants with this task, we provide a rule-based model in the `code` directory. This baselines implements the method proposed by [Schwartz and Hearst](http://psb.stanford.edu/psb-online/proceedings/psb03/schwartz.pdf) [1]. To identify acronyms, if more than 60% of the characters of a word are uppercased, this model recognizes it as acronym (i.e., short-form). To identify the long-form, it compares the characters of the acronym with the characters of the words that are before or after the acronym up to a certain window size. If the characters of these words could form the acronym, they are labeled as long-form. To run this model, use the following command:
+
+`python code/character_match.py -input <path/to/input.json> -output <path/to/output.json>`
+
+Please replace the `<path/to/input.json>` and `<path/to/output.json>` with the real paths to the input file (e..g, `dataset/dev.json`) and output file. The output file contains the predictions and can be evaluated by the scorer using the command described in the next section. The official scores for this baseline are: *Precision: 93.22%, Recall: 78.90%, F1: 85.46%*
   
 # Evaluation
 
@@ -38,3 +44,6 @@ In order to participate, please first fill out this form to register for the sha
     - Plan for System Report: If you have any plan to submit your system report or release your model publicly, please specify that. Participants are strongly encouraged to submit a system report, regardless of the results.
 
 For more information, see [SDU@AAAI-21](https://sites.google.com/view/sdu-aaai21/shared-task).
+
+# References
+[1] Schwartz AS, Hearst MA. A simple algorithm for identifying abbreviation definitions in biomedical text. Pac Symp Biocomput. 2003:451-62. PMID: 12603049.
