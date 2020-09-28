@@ -45,6 +45,8 @@ In order to participate, please first fill out this form to register for the sha
 
 For more information, see [SDU@AAAI-21](https://sites.google.com/view/sdu-aaai21/shared-task).
 
+**Update**: The CodaLab competitions for the shared task is open. Participants can also submit their results to [Acronym Identification](https://competitions.codalab.org/competitions/26609) competition. For more information, please check the [CodaLab competition for Acronym Identification](https://competitions.codalab.org/competitions/26609).
+
 # Licenses
 The dataset provided for this shared task is licensed under [CC BY-NC-SA 4.0 international license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode), and the evaluation script and the baseline are licensed under MIT license.
 
