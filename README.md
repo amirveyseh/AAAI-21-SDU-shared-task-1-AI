@@ -45,5 +45,8 @@ In order to participate, please first fill out this form to register for the sha
 
 For more information, see [SDU@AAAI-21](https://sites.google.com/view/sdu-aaai21/shared-task).
 
+# Licenses
+The dataset provided for this shared task is licensed under [CC BY-NC-SA 4.0 international license](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode), and the evaluation script and the baseline are licensed under MIT license.
+
 # References
 [1] Schwartz AS, Hearst MA. A simple algorithm for identifying abbreviation definitions in biomedical text. Pac Symp Biocomput. 2003:451-62. PMID: 12603049.
