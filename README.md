@@ -55,7 +55,8 @@ If you use the dataset, baseline or evaluation script released in this repo, ple
    title={{What Does This Acronym Mean? Introducing a New Dataset for Acronym Identification and Disambiguation}},
    author={Amir Pouran Ben Veyseh and Franck Dernoncourt and Quan Hung Tran and Thien Huu Nguyen},
    year={2020},
-   booktitle={Proceedings of COLING}
+   booktitle={Proceedings of COLING},
+   link={https://arxiv.org/pdf/2010.14678v1.pdf}
 }
 ```
 
